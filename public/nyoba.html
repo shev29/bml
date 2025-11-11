@@ -1,0 +1,71 @@
+<!-- InstanceEndEditable -->
+<!-- <meta property="og:locale" content="en_US"> -->
+<link rel="shortcut icon" href="image/bml_logo.ico">
+<!-- <link rel="apple-touch-icon" href="../../../common/img/apple_touch_icon.png"> -->
+<link rel="stylesheet" href="http://localhost/www.hts-bml.co.id/css/en/r1/base.css">
+<link rel="stylesheet" href="http://localhost/www.hts-bml.co.id/css/en/r1/layout.css">
+<link rel="stylesheet" href="http://localhost/www.hts-bml.co.id/css/en/r1/contents.css">
+<!-- InstanceBeginEditable name="addCSS" -->
+<link rel="stylesheet" href="http://localhost/www.hts-bml.co.id/css/en/r1/aboutus.css">
+<link rel="stylesheet" href="http://localhost/www.hts-bml.co.id/js/en/r1/leaflet/leaflet.css">
+<link rel="stylesheet" href="http://localhost/www.hts-bml.co.id/js/en/r1/leaflet/MarkerCluster.css">
+<link rel="stylesheet" href="http://localhost/www.hts-bml.co.id/js/en/r1/leaflet/MarkerCluster.Default.css">
+<!-- InstanceEndEditable -->
+<script src="http://localhost/www.hts-bml.co.id/js/en/r1/jquery.js"></script>
+<script src="http://localhost/www.hts-bml.co.id/js/en/r1/common.js"></script>
+<script src="http://localhost/www.hts-bml.co.id/js/en/r1/analytics.js"></script>
+<script src="http://localhost/www.hts-bml.co.id/js/en/r1/jquery.bxslider.js"></script>
+<!-- InstanceBeginEditable name="addJS" -->
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<script>
+	$(document).ready(function(e) {
+		//GoogleMaps
+		winSize = window.innerWidth;
+		if(winSize<=640) {
+			winSize = window.innerWidth * 0.65;
+			$('.sp_map_style').css('width', winSize);
+		}
+	});
+</script>
+<!-- InstanceEndEditable -->
+
+<!-- InstanceEndEditable -->
+		<main id="main">
+
+			<div id="content">
+			<!-- InstanceBeginEditable name="content" -->
+			<section id="network">
+				<div class="modalWrap">
+					<div class="modal" id="modalMap08">
+						<div id="map_canvas_indonesia" class="map_style sp_map_style"></div>
+					<!-- modalMap08 --></div>
+				<!-- modalWrap --></div>
+			<!-- network --></section>
+<!--			<script src="../../../japanese/common/js/leaflet/leaflet.js"></script>
+			<script src="../../../japanese/common/js/leaflet/leaflet.markercluster.js"></script>
+			<script src="https://www.vantec-gl.com/network/json/network.json"></script>
+			<script src="../../common/js/aboutus.js"></script> -->
+
+			<script src="http://localhost/www.hts-bml.co.id/js/en/r1/leaflet/leaflet.js"></script>
+			<script src="http://localhost/www.hts-bml.co.id/js/en/r1/leaflet/leaflet.markercluster.js"></script>
+<!--		<script src="https://www.vantec-gl.com/network/json/network.json"></script> -->
+			<script src="http://localhost/www.hts-bml.co.id/bmlnetwork.json"></script>
+			<script src="http://localhost/www.hts-bml.co.id/js/en/r1/aboutus.js"></script>
+
+<!--			<div class="tableWrap01">
+				<table class="tableLayout01">
+					<colgroup>
+					<col span="1" class="width030">
+					<col span="1" class="width070">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th class="lv2">Head Office</th>
+							<td>Kawasan Industri Kota Bukit Indah Blok A1-No.1, Purwakarta, Jawa Barat, 41181 Indonesia<br>
+							TEL:+62-264-837-1274  FAX:+62-264-837-1276</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--tableWrap01-->
+<!--			</div> -->

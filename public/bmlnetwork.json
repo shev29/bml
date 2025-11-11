@@ -1,0 +1,112 @@
+// name
+// warehouse
+// address
+// hp_url
+// photo
+// group
+// tel
+// lat
+// lng
+// 
+// photo
+
+
+var markerData = [
+
+	{
+		"area":"INDONESIA",
+		"data":[
+			{
+				name: "PT. VANTEC INDOMOBIL LOGISTICS",
+				warehouse: "Head Office",
+				address: "Kawasan Industri Kota Bukit Indah Blok A1-No.1, Purwakarta, Jawa Barat, 41181 Indonesia",
+				hp_url: "https://www.vantec-gl.com/id",
+				photo: "",
+				group: "LOGISTEED Group",
+				tel: "(+62)264-837-1274",
+				lat: "-6.445167",
+				lng: "107.461218",
+			}, 
+			{
+				name: "PT. BERDIRI MATAHARI LOGISTIK",
+				warehouse: "Head Office",
+				address: "Graha Mustika Ratu 4th Floor, JI. Gatot Subroto Kav. 74-75, Jakarta 12870, Indonesia",
+				hp_url: "https://bml.logisteed.com",
+				photo: "",
+				group: "LOGISTEED Group",
+				tel: "(+62)21-830-6590",
+				lat: "-6.242095",
+				lng: "106.842243",
+			}, 
+			{
+				name: "PT. LOGISTEED INDONESIA",
+				warehouse: "Head Office",
+				address: "Graha Mustika Ratu 4th Floor, JI. Gatot Subroto Kav. 74-75, Jakarta 12870, Indonesia",
+				hp_url: "https://id.logisteed.com",
+				photo: "",
+				group: "LOGISTEED Group",
+				tel: "(+62)21-830-6590",
+				lat: "-6.242095",
+				lng: "106.842243",
+			}, 
+			{
+				name: "PT. BERDIRI MATAHARI LOGISTIK",
+				warehouse: "Airport Office",
+				address: "Komplek Pergudangan Soewarna Unit D11 Soewarna Business Park Blok B Lot 6, Soekarno-Hatta Intl Airport Jakarta 19110 - Indonesia",
+				hp_url: "https://bml.logisteed.com",
+				photo: "",
+				group: "LOGISTEED Group",
+				tel: "(+62)21-5591-0297",
+				lat: "-6.122890",
+				lng: "106.669121",
+			}, 
+			{
+				name: "PT. BERDIRI MATAHARI LOGISTIK",
+				warehouse: "Seaport Office",
+				address: "Jl. Raya Gereja Tugu No.17, Semper Barat, Cilincing, Jakarta 14130 - Indonesia",
+				hp_url: "https://bml.logisteed.com",
+				photo: "",
+				photo: "",
+				group: "LOGISTEED Group",
+				tel: "(+62)21-440-0546",
+				lat: "-6.123074",
+				lng: "106.923662",
+			}, 
+			//{
+				//name: "PT. BERDIRI MATAHARI LOGISTIK",
+				//warehouse: "Semarang Office",
+				//address: "Sovoism Building, Jl. Dr. Cipto No.20, //Semarang 50126 - Indonesia",
+				//hp_url: "https://bml.logisteed.com",
+				photo: "",
+				//photo: "",
+				//group: "LOGISTEED Group",
+				//tel: "(+62)24-8640-0984",
+				//lat: "-6.971284",
+				//lng: "110.434109",
+			//},
+			   //{
+				//name: "PT. LOGISTEED INDONESIA",
+				//warehouse: "Surabaya Office",
+				//address: "Ngoro Industrial Park Plot D2-2, Lolawang, Ngoro, Mojokerto, Jawa Timur 61385 - Indonesia",
+				//hp_url: "",
+				//photo: "",
+				//group: "LOGISTEED Group",
+				//tel: "(+62)321-682-0994",
+				//lat: "-7.563292",
+				//lng: "112.600171",
+			//}
+			{
+				name: "PT. BERDIRI MATAHARI LOGISTIK",
+				warehouse: "Surabaya Office",
+				address: "Spazio Tower 10th Floor, Surabaya, Jawa Timur 60225 Indonesia",
+				hp_url: "",
+				photo: "",
+				group: "LOGISTEED Group",
+				tel: "(+62)321-682-0994",
+				lat: "-7.2898728",
+				lng: "112.6746607",
+			}
+		]
+	},
+
+];

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta name="google-site-verification" content="cxVGp732lX0uRNAFARJGbiXUjZNnVQoJwZlqzg2gKwo" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Language" content="en" />
+<meta name="viewport" content="width=1024" />
+<meta name="format-detection" content="telephone=no" />
+<!-- <meta name="Author" content="Hitachi, Ltd." /> -->
+<meta name="Robots" content="INDEX, FOLLOW" />
+<meta name="Description" content="Enter the content description here." />
+<meta name="Keywords" content="Keyword 1, keyword 2, keyword 3" />
+<title>PT. Berdiri Matahari Logistik</title>
+<link rel="SHORTCUT ICON" href="image/bml_logo.ico" type="image/x-icon" />
+<!-- <link rel="index" href="http://www.hitachi.com/" title="Home" /> -->
+<link rel="stylesheet" href="css/en/r1/common.css" type="text/css" media="screen,print" />
+<link rel="stylesheet" href="css/en/r1/print.css" type="text/css" media="print" />
+<script type="text/javascript" src="js/en/r1/jquery.1.10.2.js"></script>
+<script type="text/javascript" src="js/en/r1/common.js"></script>
+<!-- GLOBAL <script type="text/javascript" src="http://www.hitachi.com/js/en/r1/header.js"></script> -->
+<!-- SINGAPORE <script type="text/javascript" src="http://www.hitachi.com.sg/js/en/r1/header_sg_en.js"></script> -->
+<script type="text/javascript" src="js/en/r1/header_sg_en.js"></script>
+<style>
+.modal-trigger{
+	font-variant:small-caps;
+	background:#eee;
+	font-size:1.5em;
+	color:#333;
+	padding:.6em 1em;
+	border:0;
+	border-radius:.2em;
+	cursor:pointer;
+	letter-spacing:.1em;
+	outline: 0;
+}
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+	color:#2f2f2f;
+	text-align:left;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 55%;
+	transition: all 0.3s ease;
+    border-radius: 1rem !important;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+	position:absolute;
+	right: .5em;
+    top: 0.3em;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a,.no-select{ -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+*::selection {
+    background-color: #333;
+	color:#fff;
+}
+</style>
+</head>
+<body>
+
+<p id="top"><a href="#body">Skip to main content</a></p>
+
+<div id="HeaderArea">
+<div id="HeaderSet">
+<!--<p class="Statement"><a href="http://www.hitachi.com/"><img src="image/en/r1/corp_id.gif" width="95" height="29" alt="Hitachi" /></a></p>-->
+
+<!--<div id="Search">
+<p class="BtnOpen"><a href="http://www.hitachi.com/search-e/"><img src="image/en/r1/icon/icon_navi_search.gif" width="21" height="21" alt="Search" />Search</a></p>
+</div><!--/Search-->
+<!--<div id="CountryRegion">
+<p class="BtnOpen"><a href="http://www.hitachi.com/global/index.html"><img src="image/en/r1/icon/icon_navi_country.gif" width="21" height="21" alt="Select Country/Region" />Singapore</a></p>
+</div>--><!--/CountryRegion--><!--
+<div id="UltraGlobalNavi">
+<p id="UltraGlobalNaviProducts" class="BtnOpen"><a href="http://www.hitachi.com.sg/products/index.html">Hitachi Group<br />Products &amp; Services</a></p>
+<p id="UltraGlobalNaviCompany" class="BtnOpen"><a href="http://www.hitachi.com.sg/about/index.html">Hitachi Group<br />Corporate Information</a></p>
+</div>--><!--/UltraGlobalNavi-->
+
+</div><!--/HeaderSet-->
+</div><!--/HeaderArea-->
+
+<div id="SiteIdentity">
+<!-- <p class="Title"><a href="index.html"><img src="image/site_id_en/SiteName/site_id.gif" height="50" alt="Hitachi Transport System (Asia) Pte Ltd" /></a></p> -->
+<!-- <p class="Title"><a href="index.html"><img src="image/site_id_en/SiteName/tas logo W290 H47 V7.gif" alt="Hitachi Transport System (Asia) Pte. Ltd." STYLE="vertical-align:middle;" /></a></p> -->
+<p class="Title"><a href="index.html"><img src="image/site_id_en/SiteName/bml_logo3.png" alt="PT. Berdiri Matahari Logistik" STYLE="vertical-align:middle;" /></a></p>
+
+<!-- <p class="Title"><a href="index.html"><img src="image/site_id_en/SiteName/tas logo W290 H47 V8.png" alt="Hitachi Transport System (Asia) Pte. Ltd." STYLE="vertical-align:middle;" /></a></p> -->
+</div><!--/SiteIdentity-->
+
+<div id="GlobalNavi">
+<div class="ClearFix">
+<ul class="CourtesyNavi">
+<!-- <li><a href="http://www.hitachi-hb.co.jp/english/"><img src="image/HTSLogoH14.jpg" alt="Hitachi Transport System" /></a></li> -->
+<!-- <li><a href="http://www.hitachi-hb.co.jp/english/"><img src="image/HTSLogo5.gif" alt="Hitachi Transport System" STYLE="vertical-align:middle;" /></a></li> -->
+<li><a href="https://www.logisteed.com/en/">
+<!-- <img src="image/site_id_en/SiteName/LogisteedGroup320.png"  alt="Hitachi Transport System" STYLE="vertical-align:middle;" /> --> </a></li>
+ 
+<!--<li class="RightSeparater"><a href="http://www.hitachi-hb.co.jp">Japanese</a></li>-->
+<li><a href="Sitemap.html">Sitemap</a></li>
+<li><a href="ContactUs.html">Contact Us</a></li>
+<li><a href="#"><img src="image/logo2024.png" style="width:166px;height:23px;"></a></li>
+</ul><!--
+<ul id="GlobalNaviTop">
+<li class="Current"><a href="$link$"><em>Home Page</em></a></li>
+<li><a href="$link$">Company Profile</a></li>
+<li><a href="$link$">Services</a></li>
+<li><a href="$link$">Overseas Group Companies & Affiliates</a></li>
+<li><a href="$link$">Health, Safety, Security & Environment (HSSE)</a></li>
+<li><a href="$link$">Career</a></li>
+</ul>-->
+</div>
+</div><!--/GlobalNavi-->
+<!--
+<div id="TopicPath">
+<ul>
+<li class="FirstItem"><a href="$link$">Site Top</a></li>
+<li><a href="$link$">major category1</a></li>
+<li><a href="$link$">local category 1</a></li>
+<li><a href="$link$">Sub item 1</a></li>
+<li><strong>Current location</strong></li>
+</ul>
+</div>
+--><!--/TopicPath-->
+
+<div id="Contents">
+<div class="GridSet">
+<div class="Grid4">
+
+<DIV ALIGN="CENTER">
+<IMG SRC="image/BMLHomePagePic6.jpg" height="50%" width="100%" BORDER="0">
+</DIV>
+<br>
+<!--Locate the content area module here-->
+<!-- --------------------------------------------------------------------------- -->
+
+<div class="Section">
+<div class="ColumnSet">
+<div class="Column1 FirstItem">
+
+<div class="Section">
+<h2><span>Corporate Information</span></h2>
+</div><!--/Section-->
+
+<div class="Section">
+<h3><a href="AboutUs.html">About Us</a></h3>
+</div><!--/Section-->
+
+<div class="Section">
+<h3><a href="MgmtPrinciples.html">Management Principles</a></h3>
+</div><!--/Section-->
+
+<div class="Section">
+<h3><a href="OurHistory.html">Our History</a></h3>
+</div><!--/Section-->
+
+<!-- <div class="Section">
+<h3><a href="OrgStructure.html">Organization Structure</a></h3>
+</div><!--/Section-->
+
+<div class="Section">
+<h3><a href="Licenses.html">License and Certifications</a></h3>
+</div><!--/Section-->
+
+<div class="Section">
+<h3><a href="LocateUs.html">Locate Us</a></h3>
+</div><!--/Section-->
+
+<div class="Section">
+<h3><a href="Careers.html">Careers</a></h3>
+</div><!--/Section-->
+
+<div class="Section">
+<h3><a href="ISOCompliance.html">ISO Compliance</a></h3>
+</div><!--/Section-->
+
+<!-- --------------------------------------------------------------------------- -->
+
+</div><!--/Column1-->
+<div class="Column1">
+
+<div class="Section">
+<h2><span>Services</span></h2>
+</div><!--/Section-->
+
+<div class="Section">
+<h3><a href="ForwardingServices.html">Forwarding Services</a></h3>
+</div><!--/Section-->
+
+<div class="Section">
+<h3><a href="WarehouseServices.html">Warehousing, Distributions</a></h3>
+</div><!--/Section-->
+
+<div class="Section">
+<h3><a href="ProjectOpsServices.html">Projects & Operations</a></h3>
+</div><!--/Section-->
+
+<!-- --------------------------------------------------------------------------- -->
+
+</div><!--/Column1-->
+<div class="Column1">
+
+<div class="Section">
+<h2><span>Group Companies<!--Overseas Group Companies & Affiliates--></span></h2>
+</div><!--/Section-->
+
+<!--
+<div class="Section">
+<h3><a href="AsianNetwork.html">Asian Network</a></h3>
+</div> --><!--/Section-->
+
+<div class="Section">
+<h3><a href="GlobalNetwork.html">Global Network</a></h3>
+</div><!--/Section-->
+
+<!-- --------------------------------------------------------------------------- -->
+
+</div><!--/Column1-->
+<div class="Column1 LastItem">
+
+<div class="Section">
+<h2><span>Health, Safety, Security & Environment (HSSE)</span></h2>
+</div><!--/Section-->
+
+<!-- <div class="Section">
+<h3><a href="SafetyRules.html">Safety Rules <font size='2px'>&</font> Regulations</a></h3>
+</div><!--/Section-->
+
+<div class="Section">
+<h3><a href="HSSE.html">Good HSSE Practices</a></h3>
+</div><!--/Section-->
+
+</div><!--/Column1-->
+</div><!--/ColumnSet-->
+</div><!--/Section-->
+
+<!-- --------------------------------------------------------------------------- -->
+
+</div><!--/Grid4-->
+</div><!--/GridSet-->
+</div><!--/Contents-->
+
+
+<div id="Footer">
+<h2> Disclaimer and copyrights </h2>
+<ul>
+<li class="FirstItem"><a href="termsofuse.html">Terms of Use</a></li>
+<li><a href="privacypolicy.html">Privacy Policy</a></li>
+<!-- <li><a href="updatehistory.html">Update History</a></li> -->
+</ul>
+<p>&copy; PT. Berdiri Matahari Logistik. 2018-<script type="text/JavaScript">document.write(new Date().getFullYear());</script>. All rights reserved.</p>
+</div><!--/FooterArea-->
+ <center>
+ <table border='1' cellpadding='0' cellspacing='0'>
+     
+        <tr><td align='center'>    <a href='http://www.freevisitorcounters.com'>Freevisitorcounters.com</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=4a630905f4227cfecc8c1f42badf25743ce42289'></script>
+                                    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1027145/t/0"></script>
+            </td>
+        </tr></table></div>
+<!--ONESTAT SCRIPTCODE END-->
+</center>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span id="modalClose" class="close no-select">&times;</span>
+        <div style="display:block; margin-bottom: 7px; font-weight: 600; font-size: 20px">We will be moving...</div>
+        <div style="display:block; margin-bottom: 10px;">We're excited to announce that, as of <span style="font-weight: 600;">December 16th, 2024</span>, our office will be relocated to a new address as below.</div>
+        <div style="font-size: 15px; line-height: 1.4; margin-bottom: 17px;">
+            <span style="display:block">📍New Address:</span>
+            <span style="display:block">Pakuwon Tower 16th Floor</span>
+            <span style="display:block">Jl. Casablanca Raya Kav 88, Jakarta Selatan, 12870</span>
+            <span style="display:block">Tel: (+6221) 3005 2999</span>
+        </div>
+        <div>
+            <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.269910114785!2d106.8433297!3d-6.2218021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3c89e5bb3f7%3A0xf94eba3a38ef8f3b!2sPAKUWON%20TOWER%20JAKARTA!5e0!3m2!1sen!2sid!4v1730086182755!5m2!1sen!2sid" style="border:0" allowfullscreen="" width="100%" height="380" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+$(document).ready(function(){
+	// showModal();
+
+	$('#modalClose').click(function(){
+		hideModal();
+	});
+
+	// Do nothing when clicking on the modal content
+	$('.modal-content').click(function(event){
+       event.stopPropagation();
+    });
+});
+
+// function showModal(){
+// 	$('#myModal').fadeIn('slow');
+// 		(function fun(){
+// 			$('.modal-content').css({'transform':'translateY(-50px)'});
+// 		})();
+// }
+
+function hideModal(){
+	$('#myModal').fadeOut('fast');
+		(function fun2(){
+			$('.modal-content').css({'transform':'translateY(0px)'});
+		})();
+}
+
+$(document).on("click", function () {
+	hideModal();
+});
+</script>
+</html>
+

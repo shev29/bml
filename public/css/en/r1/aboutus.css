@@ -1,0 +1,115 @@
+@charset "utf-8";
+/*=================================
+	aboutus.css
+	- map
+================================ */
+
+/* map
+-------------------------------- */
+.modalWrap {
+	display: block;
+}
+.modal {
+	padding: 0;
+	background: none;
+}
+.leaflet-popup-content .heading02.type01 {
+	background: url(../../../common/img/com_ex01.gif) no-repeat 0 bottom !important;
+}
+.leaflet-popup-content .heading02.type02 {
+	background: url(../../../common/img/com_ex03.gif) no-repeat 0 bottom !important;
+}
+.map_style {
+	width: 100%;
+	height: 400px;
+}
+
+.leaflet-map-pane .infoBlock {
+	/*width: 410px;*/
+	width: 100%;
+	margin: 5px;
+}
+.leaflet-map-pane .subHeading {
+	margin-top: 0;
+	margin-bottom: 5px;
+	font-size: 105%;
+}
+.leaflet-map-pane .heading02 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 1rem;
+	padding-bottom: 10px;
+	text-align: left;
+}
+.leaflet-map-pane .infoWrap:after {
+	content : "";
+	display : block;
+	clear : both;
+}
+.leaflet-map-pane .infoWrap span {
+	font-size: 1rem;
+}
+.leaflet-map-pane .right {
+	float: right;
+	margin-left: 10px;
+}
+.leaflet-map-pane .left {
+	overflow: hidden;
+	font-size: 105%;
+}
+.leaflet-map-pane img {
+	max-width: 160px;
+	width: 160px;
+}
+.leaflet-map-pane .gm-style-iw {
+	overflow: hidden !important;
+}
+.leaflet-map-pane .gm-style-iw div {
+	overflow: hidden !important;
+}
+
+@media only screen and (max-width: 640px) {
+
+/* map
+-------------------------------- */
+.map_style {
+	width: 100% !important;
+	/*height: 400px;*/
+	height: 200px;
+}
+
+#cboxContent {
+	margin: 45px 10px 0;
+}
+#cboxContent .infoBlock {
+	width: 100px;
+	margin: 0;
+	overflow: hidden;
+}
+#cboxContent .subHeading {
+}
+#cboxContent .heading02 {
+	font-size: 1.3rem;
+	margin: 0 0 10px;
+}
+#cboxContent .infoWrap span {
+	font-size: 1.3rem;
+}
+#cboxContent .right {
+	float: none;
+	margin: 0 0 10px;
+	text-align: center;
+}
+#cboxContent .left {
+	font-size: 80%;
+}
+#cboxContent img {
+	width: 100%;
+}
+#cboxContent .gm-style-iw + div, #cboxContent .gm-style-iw + div + div {
+	overflow: auto !important;
+}
+
+}
+
+

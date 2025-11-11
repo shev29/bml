@@ -1,0 +1,108 @@
+.ui
+    .ui_inner
+        .ui_fruit
+            %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/treats.png'}
+        .ui_basket
+            Basket 
+            %i.fa.fa-shopping-cart
+        .ui_inner__selection
+            %input{:id => 'lovely', :type => 'radio', :name => 'selection', :checked => 'checked'}
+            %label{:for => 'lovely'} 
+                .selected.l Lovely cupcake
+                .ui_inner__slider
+                    .sb
+                        %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'}
+                    .slide
+                        .slide_inner
+                            .slide_inner__left
+                                %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake1.png'}
+                                .firework
+                                    -(1..70).each do
+                                        .firework_part
+                            .slide_inner__right
+                                %h2 Lovely cupcake
+                                %h3 $4.99 <span> Pack of 10</span>
+                                %p Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.
+                                %input{:type => 'text',:value => '10'}
+                                %input.hid{:type => 'checkbox', :id => 'add'}
+                                %label{:for => 'add'}
+                                    %div.add 
+                                        Add to cart
+                                        .firework
+                                            -(1..30).each do
+                                                .firework_part
+            %input{:id => 'super', :type => 'radio', :name => 'selection'}
+            %label{:for => 'super'} 
+                .selected.s Super cupcake
+                .ui_inner__slider
+                    .sb
+                        %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'}
+                    .slide
+                        .slide_inner
+                            .slide_inner__left
+                                %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake2.png'}
+                                .firework
+                                    -(1..70).each do
+                                        .firework_part
+                            .slide_inner__right
+                                %h2 Super cupcake
+                                %h3 $4.99 <span> Pack of 10</span>
+                                %p Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.
+                                %input{:type => 'text',:value => '10'}
+                                %input.hid{:type => 'checkbox', :id => 'add2'}
+                                %label{:for => 'add2'}
+                                    %div.add 
+                                        Add to cart
+                                        .firework
+                                            -(1..30).each do
+                                                .firework_part
+            %input{:id => 'mega', :type => 'radio', :name => 'selection'}
+            %label{:for => 'mega'} 
+                .selected.m Mega cupcake
+                .ui_inner__slider
+                    .sb
+                        %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'}
+                    .slide
+                        .slide_inner
+                            .slide_inner__left
+                                %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake3.png'}
+                                .firework
+                                    -(1..70).each do
+                                        .firework_part
+                            .slide_inner__right
+                                %h2 Mega cupcake
+                                %h3 $4.99 <span> Pack of 10</span>
+                                %p Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.
+                                %input{:type => 'text',:value => '10'}
+                                %input.hid{:type => 'checkbox', :id => 'add3'}
+                                %label{:for => 'add3'}
+                                    %div.add 
+                                        Add to cart
+                                        .firework
+                                            -(1..30).each do
+                                                .firework_part
+            %input{:id => 'huge', :type => 'radio', :name => 'selection'}
+            %label{:for => 'huge'} 
+                .selected.h Huge cupcake
+                .ui_inner__slider
+                    .sb
+                        %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/starburst2.png'}
+                    .slide
+                        .slide_inner
+                            .slide_inner__left
+                                %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cupcake4.png'}
+                                .firework
+                                    -(1..70).each do
+                                        .firework_part
+                            .slide_inner__right
+                                %h2 Huge cupcake
+                                %h3 $9.99 <span> Pack of 10</span>
+                                %p Pie cupcake caramels marshmallow ice cream icing. Brownie biscuit candy macaroon dessert ice cream halvah. Cheesecake sweet roll marzipan brownie lollipop gummies.
+                                %input{:type => 'text',:value => '10'}
+                                %input.hid{:type => 'checkbox', :id => 'add4'}
+                                %label{:for => 'add4'}
+                                    %div.add 
+                                        Add to cart
+                                        .firework
+                                            -(1..30).each do
+                                                .firework_part

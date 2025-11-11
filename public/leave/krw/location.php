@@ -1,0 +1,2 @@
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7932.316168495636!2d106.8365341248568!3d-6.242886802362708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3b8ca14a361%3A0xfa0dd8bf0a006afa!2sPT.%20Berdiri%20Matahari%20Logistik!5e0!3m2!1sid!2sid!4v1672192499802!5m2!1sid!2sid" 
+width="1100" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

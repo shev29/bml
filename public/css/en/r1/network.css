@@ -1,0 +1,219 @@
+ @charset "utf-8";
+/*=================================
+	network.css
+	- heading
+	- map
+================================ */
+
+/* heading
+-------------------------------- */
+#network .heading02 {
+	background: none;
+	font-size: 35px;
+	font-size: 3.5rem;
+	text-align: center;
+}
+#network .heading02 span:after {
+	display: none;
+}
+/*#network .heading02 > span {
+	background: url(/img/world_ic01.png) 0 0 no-repeat;
+	background-size: 48px;
+	padding-left: 70px;
+	padding-bottom: 10px;
+}*/
+#network .heading02 > span:before {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	margin-right: 20px;
+	background: url(../../../img/world_ic01.png) 0 0 no-repeat;
+	background-size: 48px;
+	vertical-align: -9px;
+	content: "";
+}
+#network .heading02 > span .red {
+	color: #fe0000;
+}
+
+/* map
+-------------------------------- */
+.modal {
+	background: none;
+}
+#map_canvas_all {
+	width: 100%;
+	height: 500px;
+}
+.leaflet-popup-content .heading02.type01 {
+	background: url(../../../common/img/com_ex01.gif) no-repeat 0 bottom !important;
+}
+.leaflet-popup-content .heading02.type02 {
+	background: url(../../../common/img/com_ex03.gif) no-repeat 0 bottom !important;
+}
+.map_style {
+	width: 1024px;
+	height: 664px;
+}
+
+.leaflet-map-pane .infoBlock {
+	/*width: 410px;*/
+	width: 100%;
+	margin: 5px;
+}
+.leaflet-map-pane .subHeading {
+	margin-top: 0;
+	margin-bottom: 5px;
+	font-size: 105%;
+}
+.leaflet-map-pane .heading02 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 2rem;
+	padding-bottom: 10px;
+	text-align: left;
+}
+.leaflet-map-pane .infoWrap:after {
+	content : "";
+	display : block;
+	clear : both;
+}
+.leaflet-map-pane .infoWrap span {
+	font-size: 2rem;
+}
+.leaflet-map-pane .right {
+	float: right;
+	margin-left: 10px;
+}
+.leaflet-map-pane .left {
+	overflow: hidden;
+	font-size: 105%;
+}
+.leaflet-map-pane img {
+	max-width: 160px;
+	width: 160px;
+}
+.leaflet-map-pane .gm-style-iw {
+	overflow: hidden !important;
+}
+.leaflet-map-pane .gm-style-iw div {
+	overflow: hidden !important;
+}
+
+@media only screen and (max-width: 640px) {
+
+/* heading
+-------------------------------- */
+#network .heading02 {
+	padding: 10px 0 0;
+	margin: 0;
+	font-size: 22px;
+	font-size: 2.2rem;
+	text-align: center;
+}
+#network .heading02 span:after {
+	display: none;
+}
+#network .heading02 > span {
+	background: url(../../../img/world_ic01.png) 0 0 no-repeat;
+	background-size: 23px auto;
+	padding-left: 35px;
+}
+#network .heading02 > span:before {
+	display: none;
+}
+#network .heading02 > span .red {
+	color: #fe0000;
+}
+
+/* map
+-------------------------------- */
+.map_style {
+	width: 560px;
+	height: 400px;
+}
+
+#cboxContent {
+	margin: 45px 10px 0;
+}
+#cboxContent .infoBlock {
+	width: 100px;
+	margin: 0;
+	overflow: hidden;
+}
+#cboxContent .subHeading {
+}
+#cboxContent .heading02 {
+	font-size: 1.3rem;
+	margin: 0 0 10px;
+}
+#cboxContent .infoWrap span {
+	font-size: 1.3rem;
+}
+#cboxContent .right {
+	float: none;
+	margin: 0 0 10px;
+	text-align: center;
+}
+#cboxContent .left {
+	font-size: 80%;
+}
+#cboxContent img {
+	width: 100%;
+}
+#cboxContent .gm-style-iw + div, #cboxContent .gm-style-iw + div + div {
+	overflow: auto !important;
+}
+
+}
+
+.tooltip {
+	position: absolute !important;
+	display: none;
+	width: 150px;
+	margin-bottom: 10px;
+	padding: 20px 10px;
+	text-align: center;
+	border: 1px solid #d3d3d3;
+	background: #ffffff;
+}
+.tooltip:before {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	margin-left: -10px;
+	height: 0;
+	width: 0;
+	border-top: 10px solid #d3d3d3;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+.tooltip:after {
+	content: "";
+	position: absolute;
+	bottom: -9px;
+	left: 50%;
+	margin-left: -10px;
+	height: 0;
+	width: 0;
+	border-top: 10px solid #ffffff;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+.tooltip .title {
+	font-weight: bold;
+	margin: 0 0 10px;
+}
+.tooltip .mapNum {
+	display: block;
+	padding: 3px 5px;
+	margin: 0 30px;
+	background: #ED0707;
+	color: #ffffff;
+}
+
+#network .col {
+	position: relative;
+}
+
